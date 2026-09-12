@@ -2,6 +2,7 @@
 *
 !*/
 !.gitignore
+!LICENSE
 !*.md
 !source/*.c
 !source/*.rs

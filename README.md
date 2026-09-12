@@ -1,6 +1,6 @@
 # Cricket 26 on Mac with CrossOver
 
-Run an owned Microsoft Store **PC/GDK** copy of Cricket 26 on **Apple Silicon macOS** using **CrossOver, DXMT, WineGDK and Xodus**, without booting Windows. This private repository preserves the method, source patches and replay scripts from a working installation.
+Run an owned Microsoft Store **PC/GDK** copy of Cricket 26 on **Apple Silicon macOS** using **CrossOver, DXMT, WineGDK and Xodus**, without booting Windows. This open-source repository preserves the method, source patches and replay scripts from a working installation.
 
 The preserved setup passed sign-in, loaded an England vs Australia match, and rendered an on-field delivery on 12 September 2026. The user confirmed that the game was working. It used CrossOver 26.3, DXMT, a patched WineGDK runtime, and a patched Xodus service with real Microsoft account/license requests. Saves stay on the Mac.
 
@@ -34,10 +34,10 @@ This runs the Windows PC game through compatibility software. It does not use an
 
 ## Get the sources
 
-Clone with a GitHub account that has access to this private repository:
+Clone the public repository:
 
 ```sh
-gh repo clone wtfsayo/cricket26-crossover
+git clone https://github.com/wtfsayo/cricket26-crossover.git
 cd cricket26-crossover
 python3 scripts/check.py
 ```
@@ -89,4 +89,4 @@ Keep the approximately 195 GiB package/extraction workspace outside this reposit
 - [Xodus](https://github.com/xodus-gaming/xodus). Its copied license is [GPL 3.0](licenses/Xodus-GPL-3.0.txt); existing notices continue to apply to the Xodus patch and sources derived from that project.
 - CrossOver and Microsoft's native threading DLL must be acquired separately under their respective terms. Neither is redistributed here.
 
-No blanket license for third-party material is replaced by this repository. The pinned upstream trees supply the rest of the source and their original notices.
+Original scripts and documentation in this repository are licensed under [GNU GPL version 3](LICENSE). The WineGDK patch and Wine-derived code retain their applicable LGPL terms and upstream notices. The Xodus patch and Xodus-derived code retain their applicable GPL terms and upstream notices. The pinned upstream trees supply the rest of the source and their original notices. This license does not grant rights to the game, CrossOver or Microsoft's binaries.
