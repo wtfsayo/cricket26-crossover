@@ -1,0 +1,36 @@
+# Only explicitly named source and documentation types may be tracked.
+*
+!*/
+!.gitignore
+!*.md
+!source/*.c
+!source/*.rs
+!source/*.py
+!source/*.sh
+!source/*.patch
+!source/lld-link
+!source/Cargo.lock
+!scripts/*.py
+!licenses/*.txt
+# Never stage runtime output, dependency checkouts, credentials or game data.
+.DS_Store
+__pycache__/
+.env*
+*.sqlite*
+*.db
+*.log
+*.out
+*.pem
+*.key
+*.msixvc*
+*.exe
+*.dll*
+*.so
+*.rar
+*.zip
+*.tar*
+target/
+build/
+extracted/
+runtime-research/
+repeatable/

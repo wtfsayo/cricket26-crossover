@@ -1,0 +1,3 @@
+#!/bin/sh
+export DYLD_LIBRARY_PATH=@HOME@/.rustup/toolchains/1.98.0-aarch64-apple-darwin/lib
+exec @HOME@/.rustup/toolchains/1.98.0-aarch64-apple-darwin/lib/rustlib/aarch64-apple-darwin/bin/rust-lld -flavor link "$@"
